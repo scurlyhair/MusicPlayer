@@ -42,11 +42,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5934E08A24A5B69E00C95D2C /* Logic */ = {
+		5934E08A24A5B69E00C95D2C /* Processor */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Logic;
+			path = Processor;
 			sourceTree = "<group>";
 		};
 		E1649AFE24A322C600169882 = {
@@ -91,7 +91,7 @@
 		E1649B1D24A322E200169882 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5934E08A24A5B69E00C95D2C /* Logic */,
+				5934E08A24A5B69E00C95D2C /* Processor */,
 				E1649B1E24A3231100169882 /* View */,
 				E1649B2024A3233700169882 /* Service */,
 				E1649B2124A3236500169882 /* Model */,
