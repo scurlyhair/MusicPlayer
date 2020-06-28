@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MusicPlayerForMacOS
+//  MusicPlayerForMac
 //
 //  Created by yunhui wu on 2020/6/28.
 //  Copyright © 2020 yunhui wu. All rights reserved.
