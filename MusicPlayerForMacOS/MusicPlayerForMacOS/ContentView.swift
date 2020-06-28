@@ -1,9 +1,9 @@
 //
 //  ContentView.swift
-//  MusicPlayer
+//  MusicPlayerForMacOS
 //
-//  Created by scurlyhair on 2020/6/24.
-//  Copyright © 2020 scurly. All rights reserved.
+//  Created by yunhui wu on 2020/6/28.
+//  Copyright © 2020 yunhui wu. All rights reserved.
 //
 
 import SwiftUI
