@@ -144,7 +144,7 @@
 			children = (
 				E1D222FC24AC8F0E004DB041 /* Model */,
 				E18D769824A9EFA7005A87EA /* UI */,
-				E18D769324A9EE9F005A87EA /* Accessor */,
+				E18D769324A9EE9F005A87EA /* DataAccessor */,
 				E18D769424A9EEC8005A87EA /* Services */,
 				E18D768F24A9EB15005A87EA /* Resources */,
 			);
@@ -158,13 +158,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E18D769324A9EE9F005A87EA /* Accessor */ = {
+		E18D769324A9EE9F005A87EA /* DataAccessor */ = {
 			isa = PBXGroup;
 			children = (
 				E1D222F324AC8337004DB041 /* Local */,
 				E1D222F224AC831B004DB041 /* Remote */,
 			);
-			path = Accessor;
+			path = DataAccessor;
 			sourceTree = "<group>";
 		};
 		E18D769424A9EEC8005A87EA /* Services */ = {
