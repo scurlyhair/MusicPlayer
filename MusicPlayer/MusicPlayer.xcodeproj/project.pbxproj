@@ -18,6 +18,9 @@
 		5934E15324A8E73200C95D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15224A8E73200C95D2C /* Assets.xcassets */; };
 		5934E15624A8E73200C95D2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15524A8E73200C95D2C /* Preview Assets.xcassets */; };
 		5934E15924A8E73200C95D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15724A8E73200C95D2C /* Main.storyboard */; };
+		598AC55D24ACCDF100615376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55C24ACCDF100615376 /* LoginView.swift */; };
+		598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
+		598AC56124ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
 		E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
 		E18D769B24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
 		E18D769D24AC4269005A87EA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769C24AC4269005A87EA /* APIService.swift */; };
@@ -49,6 +52,8 @@
 		5934E15824A8E73200C95D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5934E15A24A8E73200C95D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5934E15B24A8E73200C95D2C /* MusicPlayerForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicPlayerForMac.entitlements; sourceTree = "<group>"; };
+		598AC55C24ACCDF100615376 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		598AC55F24ACCF2000615376 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E18D769924AB2271005A87EA /* NetwokingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingService.swift; sourceTree = "<group>"; };
 		E18D769C24AC4269005A87EA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E18D76A324AC43EA005A87EA /* NetwokingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingError.swift; sourceTree = "<group>"; };
@@ -97,7 +102,7 @@
 		5934E13324A8E70000C95D2C /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E18D769524A9EF36005A87EA /* UI */,
+				E18D769524A9EF36005A87EA /* View */,
 				5934E13424A8E70000C95D2C /* AppDelegate.swift */,
 				5934E13624A8E70000C95D2C /* SceneDelegate.swift */,
 				5934E13824A8E70000C95D2C /* ContentView.swift */,
@@ -139,11 +144,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		59F1532F24ACF6150008492E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59F1533024ACF62C0008492E /* Login */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59F1533024ACF62C0008492E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				598AC55F24ACCF2000615376 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		59F1533124ACF66E0008492E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				598AC55C24ACCDF100615376 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E18D768E24A9E9C9005A87EA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				59F1532F24ACF6150008492E /* ViewModel */,
 				E1D222FC24AC8F0E004DB041 /* Model */,
-				E18D769824A9EFA7005A87EA /* UI */,
 				E18D769324A9EE9F005A87EA /* DataAccessor */,
 				E18D769424A9EEC8005A87EA /* Services */,
 				E18D768F24A9EB15005A87EA /* Resources */,
@@ -175,34 +204,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		E18D769524A9EF36005A87EA /* UI */ = {
+		E18D769524A9EF36005A87EA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E18D769724A9EF83005A87EA /* Components */,
-				E18D769624A9EF6F005A87EA /* Screens */,
+				59F1533124ACF66E0008492E /* Login */,
 			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		E18D769624A9EF6F005A87EA /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		E18D769724A9EF83005A87EA /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		E18D769824A9EFA7005A87EA /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E18D769F24AC4288005A87EA /* Netwoking */ = {
@@ -343,8 +350,10 @@
 			files = (
 				E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				E18D769D24AC4269005A87EA /* APIService.swift in Sources */,
+				598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */,
 				E1D222FA24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */,
+				598AC55D24ACCDF100615376 /* LoginView.swift in Sources */,
 				E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */,
 				E1D222FE24AC8F22004DB041 /* Account.swift in Sources */,
 				5934E13524A8E70000C95D2C /* AppDelegate.swift in Sources */,
@@ -364,6 +373,7 @@
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E1D222FF24AC8F22004DB041 /* Account.swift in Sources */,
+				598AC56124ACCF2000615376 /* LoginViewModel.swift in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +451,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -495,6 +506,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -10,13 +10,13 @@ import Foundation
 import Combine
 
 protocol AccountRemoteAccessor: NetworkingService {
-    func signIn(token: String) -> AnyPublisher<Account, Error>
+    func signIn(username: String, token: String) -> AnyPublisher<Account, Error>
 }
 
 struct RealAccountRemoteAccessor: AccountRemoteAccessor {
     var session: URLSession
     
-    func signIn(token: String) -> AnyPublisher<Account, Error> {
-        return call(endpoint: AccountAPI.signIn(token: token))
+    func signIn(username: String, token: String) -> AnyPublisher<Account, Error> {
+        return call(endpoint: AccountAPI.signIn(username: username, token: token))
     }
 }
