@@ -16,9 +16,8 @@ struct LoginView: View {
             Text("Login")
                 .padding()
                 .font(.headline)
-
-            createTextField(title: "username", text: $viewModel.username)
-            createTextField(title: "password", text: $viewModel.password)
+            input(title: "username", text: $viewModel.username)
+            input(title: "password", text: $viewModel.password)
             Button(action: viewModel.commit, label: {
                 Text("Commit")
             }).padding()
@@ -26,7 +25,7 @@ struct LoginView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
-    func createTextField(title: String, text: Binding<String>) -> some View {
+    func input(title: String, text: Binding<String>) -> some View {
         return TextField(title, text: text)
             .padding()
             .overlay(
@@ -38,10 +37,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone XS"], id: \.self) {
-            LoginView(viewModel: .init())
-                .previewDevice(PreviewDevice(rawValue: $0))
-                .previewDisplayName($0)
-        }
+        LoginView(viewModel: .init())
     }
 }

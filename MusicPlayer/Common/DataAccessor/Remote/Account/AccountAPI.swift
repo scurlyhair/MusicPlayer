@@ -10,7 +10,7 @@ import Foundation
 
 extension RealAccountRemoteAccessor {
     enum AccountAPI {
-        case signIn(username: String, token: String)
+        case signIn(username: String, password: String)
     }
 }
 
@@ -21,8 +21,8 @@ extension RealAccountRemoteAccessor.AccountAPI: APIService {
     
     var path: String {
         switch self {
-        case let .signIn(username, token):
-            return "/user?username=\(username)&token=\(token)"
+        case let .signIn(username, password):
+            return "/user?username=\(username)&password=\(password)"
         }
     }
     

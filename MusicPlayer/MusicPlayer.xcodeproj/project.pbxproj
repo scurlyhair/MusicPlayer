@@ -20,13 +20,26 @@
 		5934E15924A8E73200C95D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15724A8E73200C95D2C /* Main.storyboard */; };
 		598AC55D24ACCDF100615376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55C24ACCDF100615376 /* LoginView.swift */; };
 		598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
-		598AC56124ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
 		E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
 		E18D769B24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
 		E18D769D24AC4269005A87EA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769C24AC4269005A87EA /* APIService.swift */; };
 		E18D769E24AC4269005A87EA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769C24AC4269005A87EA /* APIService.swift */; };
 		E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D76A324AC43EA005A87EA /* NetwokingError.swift */; };
 		E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D76A324AC43EA005A87EA /* NetwokingError.swift */; };
+		E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEBF24AD88A000CA2EEF /* HomeViewModel.swift */; };
+		E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEC124AD88BB00CA2EEF /* HomeView.swift */; };
+		E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */; };
+		E1BBBED024ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */; };
+		E1BBBED424ADD51D00CA2EEF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBED324ADD51D00CA2EEF /* ImageView.swift */; };
+		E1BBBED524ADD51D00CA2EEF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBED324ADD51D00CA2EEF /* ImageView.swift */; };
+		E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBED624ADD53700CA2EEF /* ImageViewModel.swift */; };
+		E1BBBED824ADD53700CA2EEF /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBED624ADD53700CA2EEF /* ImageViewModel.swift */; };
+		E1BBBEE424ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE324ADE05200CA2EEF /* ImageRemoteAccessor.swift */; };
+		E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE324ADE05200CA2EEF /* ImageRemoteAccessor.swift */; };
+		E1BBBEE724ADE7C400CA2EEF /* RemoteDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE624ADE7C400CA2EEF /* RemoteDataAccessor.swift */; };
+		E1BBBEE824ADE7C400CA2EEF /* RemoteDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE624ADE7C400CA2EEF /* RemoteDataAccessor.swift */; };
+		E1BBBEEA24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */; };
+		E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */; };
 		E1D222FA24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
 		E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
 		E1D222FE24AC8F22004DB041 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222FD24AC8F22004DB041 /* Account.swift */; };
@@ -57,6 +70,14 @@
 		E18D769924AB2271005A87EA /* NetwokingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingService.swift; sourceTree = "<group>"; };
 		E18D769C24AC4269005A87EA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E18D76A324AC43EA005A87EA /* NetwokingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingError.swift; sourceTree = "<group>"; };
+		E1BBBEBF24AD88A000CA2EEF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E1BBBEC124AD88BB00CA2EEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingHelper.swift; sourceTree = "<group>"; };
+		E1BBBED324ADD51D00CA2EEF /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		E1BBBED624ADD53700CA2EEF /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		E1BBBEE324ADE05200CA2EEF /* ImageRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRemoteAccessor.swift; sourceTree = "<group>"; };
+		E1BBBEE624ADE7C400CA2EEF /* RemoteDataAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataAccessor.swift; sourceTree = "<group>"; };
+		E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkingService.swift; sourceTree = "<group>"; };
 		E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteAccessor.swift; sourceTree = "<group>"; };
 		E1D222FD24AC8F22004DB041 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E1D2230024AC8FAD004DB041 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
@@ -102,7 +123,7 @@
 		5934E13324A8E70000C95D2C /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E18D769524A9EF36005A87EA /* View */,
+				E1D2230324AD8451004DB041 /* Modules */,
 				5934E13424A8E70000C95D2C /* AppDelegate.swift */,
 				5934E13624A8E70000C95D2C /* SceneDelegate.swift */,
 				5934E13824A8E70000C95D2C /* ContentView.swift */,
@@ -144,26 +165,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		59F1532F24ACF6150008492E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				59F1533024ACF62C0008492E /* Login */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		59F1533024ACF62C0008492E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				598AC55F24ACCF2000615376 /* LoginViewModel.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		59F1533124ACF66E0008492E /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				598AC55C24ACCDF100615376 /* LoginView.swift */,
+				598AC55F24ACCF2000615376 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -171,7 +177,8 @@
 		E18D768E24A9E9C9005A87EA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				59F1532F24ACF6150008492E /* ViewModel */,
+				E1BBBED224ADD50000CA2EEF /* Components */,
+				E1BBBECD24ADD21A00CA2EEF /* Helpers */,
 				E1D222FC24AC8F0E004DB041 /* Model */,
 				E18D769324A9EE9F005A87EA /* DataAccessor */,
 				E18D769424A9EEC8005A87EA /* Services */,
@@ -204,29 +211,66 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		E18D769524A9EF36005A87EA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				59F1533124ACF66E0008492E /* Login */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E18D769F24AC4288005A87EA /* Netwoking */ = {
 			isa = PBXGroup;
 			children = (
 				E18D769924AB2271005A87EA /* NetwokingService.swift */,
+				E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */,
 				E18D76A324AC43EA005A87EA /* NetwokingError.swift */,
 				E18D769C24AC4269005A87EA /* APIService.swift */,
 			);
 			path = Netwoking;
 			sourceTree = "<group>";
 		};
-		E1D222F224AC831B004DB041 /* Remote */ = {
+		E1BBBEBE24AD885400CA2EEF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBEC124AD88BB00CA2EEF /* HomeView.swift */,
+				E1BBBEBF24AD88A000CA2EEF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1BBBEC924ADCEDE00CA2EEF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBEE324ADE05200CA2EEF /* ImageRemoteAccessor.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E1BBBECD24ADD21A00CA2EEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E1BBBED124ADD36800CA2EEF /* Account */ = {
 			isa = PBXGroup;
 			children = (
 				E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */,
 				E1D2230024AC8FAD004DB041 /* AccountAPI.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		E1BBBED224ADD50000CA2EEF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBED324ADD51D00CA2EEF /* ImageView.swift */,
+				E1BBBED624ADD53700CA2EEF /* ImageViewModel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E1D222F224AC831B004DB041 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBEE624ADE7C400CA2EEF /* RemoteDataAccessor.swift */,
+				E1BBBED124ADD36800CA2EEF /* Account */,
+				E1BBBEC924ADCEDE00CA2EEF /* Image */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -244,6 +288,15 @@
 				E1D222FD24AC8F22004DB041 /* Account.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D2230324AD8451004DB041 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1BBBEBE24AD885400CA2EEF /* Home */,
+				59F1533124ACF66E0008492E /* Login */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,15 +401,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
 				E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				E18D769D24AC4269005A87EA /* APIService.swift in Sources */,
+				E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */,
+				E1BBBEE724ADE7C400CA2EEF /* RemoteDataAccessor.swift in Sources */,
+				E1BBBEE424ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
 				598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */,
+				E1BBBEEA24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
 				E1D222FA24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */,
+				E1BBBED424ADD51D00CA2EEF /* ImageView.swift in Sources */,
 				598AC55D24ACCDF100615376 /* LoginView.swift in Sources */,
 				E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */,
 				E1D222FE24AC8F22004DB041 /* Account.swift in Sources */,
+				E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				5934E13524A8E70000C95D2C /* AppDelegate.swift in Sources */,
+				E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */,
 				5934E13724A8E70000C95D2C /* SceneDelegate.swift in Sources */,
 				5934E13924A8E70000C95D2C /* ContentView.swift in Sources */,
 			);
@@ -366,14 +427,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BBBED024ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
 				5934E15124A8E73200C95D2C /* ContentView.swift in Sources */,
 				E18D769B24AB2271005A87EA /* NetwokingService.swift in Sources */,
+				E1BBBED524ADD51D00CA2EEF /* ImageView.swift in Sources */,
+				E1BBBEE824ADE7C400CA2EEF /* RemoteDataAccessor.swift in Sources */,
 				E18D769E24AC4269005A87EA /* APIService.swift in Sources */,
+				E1BBBED824ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
+				E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
 				E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */,
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E1D222FF24AC8F22004DB041 /* Account.swift in Sources */,
-				598AC56124ACCF2000615376 /* LoginViewModel.swift in Sources */,
+				E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
