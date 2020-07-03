@@ -14,11 +14,7 @@ extension LoginView {
         @Published var password: String = ""
         
         func commit() {
-            username += "a"
-        }
-        func reset() {
-            username = ""
-            password = ""
+            
         }
     }
 }

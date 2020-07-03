@@ -10,7 +10,10 @@ import Foundation
 
 extension HomeView {
     class ViewModel: ObservableObject {
-        @Published var avatar: String?
+        @Published var isPresentLogin: Bool = false
         
+        func presentLogin() {
+            isPresentLogin = true
+        }
     }
 }

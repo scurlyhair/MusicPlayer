@@ -28,7 +28,7 @@ extension NetworkingService {
     }
 }
 
-private extension Publisher where Output == URLSession.DataTaskPublisher.Output {
+fileprivate extension Publisher where Output == URLSession.DataTaskPublisher.Output {
     func requestJSON<Value>(httpCodes: HTTPCodes) -> AnyPublisher<Value, Error> where Value: Decodable {
         return tryMap {
                 assert(!Thread.isMainThread)

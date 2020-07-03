@@ -16,7 +16,7 @@ extension RealAccountRemoteAccessor {
 
 extension RealAccountRemoteAccessor.AccountAPI: APIService {
     var baseUrl: String {
-        return "https://api.github.com"
+        return "https://api.example.com"
     }
     
     var path: String {
