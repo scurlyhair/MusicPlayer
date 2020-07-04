@@ -12,8 +12,8 @@ struct Container: View {
     var body: some View {
         NavigationView {
             HomeView(viewModel: .init())
-                .modifier(PresentationModifier())
         }
+        .modifier(PresentationModifier())
     }
 }
 
