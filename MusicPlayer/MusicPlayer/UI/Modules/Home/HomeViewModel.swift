@@ -11,6 +11,18 @@ import SwiftUI
 
 extension HomeView {
     class ViewModel: ObservableObject {
+        @Binding var isPresentLogin: Bool
         
+        init(isPresentLogin: Binding<Bool> = .constant(false)) {
+            _isPresentLogin = isPresentLogin
+        }
+        
+        func bind(isPresentLogin: Binding<Bool>) {
+            _isPresentLogin = isPresentLogin
+        }
+        
+        func accountBtnTapped() {
+            isPresentLogin = true
+        }
     }
 }

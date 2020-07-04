@@ -11,30 +11,26 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject private(set) var viewModel: ViewModel
     @EnvironmentObject var status: PresentationStatus
-    
+
     var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        self.status.isPresentLogin = true
-                    }) {
-                        Text("Account")
-                    }
-                }
-                SongListView(viewModel: .init())
-            }
-            .navigationBarTitle("Home")
-//            .navigationBarHidden(true)
+        SongListView(viewModel: .init())
+            .onAppear(perform: {
+                self.viewModel.bind(isPresentLogin: self.$status.isPresentLogin)
+            })
+            .navigationBarItems(trailing: configureNavigationBarItemTrailing())
+            .navigationBarTitle("Home", displayMode: .large)
             .padding()
-        }
+    }
+
+    func configureNavigationBarItemTrailing() -> some View {
+        return Button(action: viewModel.accountBtnTapped, label: {
+            Text("Account").padding()
+        })
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: .init())
+        HomeView(viewModel: .init()).environmentObject(PresentationStatus())
     }
 }
-

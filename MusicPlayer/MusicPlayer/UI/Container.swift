@@ -10,8 +10,10 @@ import SwiftUI
 
 struct Container: View {
     var body: some View {
-        HomeView(viewModel: .init())
-            .modifier(PresentationModifier())
+        NavigationView {
+            HomeView(viewModel: .init())
+                .modifier(PresentationModifier())
+        }
     }
 }
 
