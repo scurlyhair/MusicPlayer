@@ -10,27 +10,25 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject private(set) var viewModel: ViewModel
-
+    @EnvironmentObject var status: PresentationStatus
+    
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
                     Spacer()
-                    Button(action: viewModel.presentLogin) {
+                    Button(action: {
+                        self.status.isPresentLogin = true
+                    }) {
                         Text("Account")
                     }
                 }
                 SongListView(viewModel: .init())
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
+            .navigationBarTitle("Home")
+//            .navigationBarHidden(true)
             .padding()
         }
-        .sheet(isPresented: $viewModel.isPresentLogin, onDismiss: {
-            self.viewModel.isPresentLogin = false
-        }, content: {
-            LoginView(viewModel: .init())
-        })
     }
 }
 
@@ -39,3 +37,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView(viewModel: .init())
     }
 }
+

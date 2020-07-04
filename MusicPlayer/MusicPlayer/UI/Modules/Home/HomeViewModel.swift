@@ -7,13 +7,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension HomeView {
     class ViewModel: ObservableObject {
-        @Published var isPresentLogin: Bool = false
         
-        func presentLogin() {
-            isPresentLogin = true
-        }
     }
 }
