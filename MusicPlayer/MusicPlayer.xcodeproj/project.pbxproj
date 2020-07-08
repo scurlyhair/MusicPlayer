@@ -53,8 +53,6 @@
 		E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */; };
 		E1D222FA24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
 		E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
-		E1D222FE24AC8F22004DB041 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222FD24AC8F22004DB041 /* Account.swift */; };
-		E1D222FF24AC8F22004DB041 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222FD24AC8F22004DB041 /* Account.swift */; };
 		E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
 		E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
 		E1DCD81424B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */; };
@@ -100,7 +98,6 @@
 		E1BBBEE324ADE05200CA2EEF /* ImageRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRemoteAccessor.swift; sourceTree = "<group>"; };
 		E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkingService.swift; sourceTree = "<group>"; };
 		E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteAccessor.swift; sourceTree = "<group>"; };
-		E1D222FD24AC8F22004DB041 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E1D2230024AC8FAD004DB041 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
 		E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,7 +360,6 @@
 		E1D222FC24AC8F0E004DB041 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E1D222FD24AC8F22004DB041 /* Account.swift */,
 				5933CAA624AEDD39006B1B8C /* Song.swift */,
 			);
 			path = Model;
@@ -498,7 +494,6 @@
 				598AC55D24ACCDF100615376 /* LoginView.swift in Sources */,
 				5933CAAC24AEF864006B1B8C /* SongListCell.swift in Sources */,
 				E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */,
-				E1D222FE24AC8F22004DB041 /* Account.swift in Sources */,
 				E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				5933CAA724AEDD39006B1B8C /* Song.swift in Sources */,
 				E198E0E024B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
@@ -529,7 +524,6 @@
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E19F32CA24B59445009B012D /* Console.swift in Sources */,
-				E1D222FF24AC8F22004DB041 /* Account.swift in Sources */,
 				E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
 				E1DCD81524B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,

@@ -6,10 +6,13 @@
 //  Copyright © 2020 yunhui wu. All rights reserved.
 //
 
-import CoreData
 import Foundation
+import CoreData
 
 class CoreDataStack {
+    /// Background queue
+    lazy var backgroundQueue: DispatchQueue = DispatchQueue(label: "core_data")
+    
     /// Main queue context
     lazy var mainContext: NSManagedObjectContext? = {
         if let coordinator = storeCoordinator {
@@ -21,41 +24,7 @@ class CoreDataStack {
         return nil
     }()
     
-    /// Private queue context
-    lazy var privateContext: NSManagedObjectContext? = {
-        if let coordinator = storeCoordinator {
-            let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-            context.persistentStoreCoordinator = coordinator
-            return context
-        }
-        Console.logError("Construct privateContext failed!")
-        return nil
-    }()
-    
-    private lazy var managedObjectModel: NSManagedObjectModel? = {
-        if let URL = Bundle.main.url(forResource: "Example", withExtension: "momd"),
-            let model = NSManagedObjectModel(contentsOf: URL) {
-            return model
-        }
-        Console.logError("Construct managedObjectModel failed!")
-        return nil
-    }()
-    
-    private lazy var storeDescriptions: [NSPersistentStoreDescription]? = {
-        var descriptions: [NSPersistentStoreDescription] = []
-        if let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
-            let description = NSPersistentStoreDescription()
-            description.url = documentURL.appendingPathComponent("Example.sqlite")
-            description.type = NSSQLiteStoreType
-            descriptions.append(description)
-        }
-        if descriptions.count > 0 {
-            return descriptions
-        }
-        Console.logError("Construct storeDescriptions failed!")
-        return nil
-    }()
-    
+    /// Store Coordinator
     private lazy var storeCoordinator: NSPersistentStoreCoordinator? = {
         if let model = managedObjectModel, let descriptions = storeDescriptions {
             let coordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
@@ -70,6 +39,30 @@ class CoreDataStack {
             return coordinator
         }
         Console.logError("Construct storeCoordinator failed!")
+        return nil
+    }()
+    
+    private lazy var managedObjectModel: NSManagedObjectModel? = {
+        if let URL = Bundle.main.url(forResource: "MusicPlayer", withExtension: "momd"),
+            let model = NSManagedObjectModel(contentsOf: URL) {
+            return model
+        }
+        Console.logError("Construct managedObjectModel failed!")
+        return nil
+    }()
+    
+    private lazy var storeDescriptions: [NSPersistentStoreDescription]? = {
+        var descriptions: [NSPersistentStoreDescription] = []
+        if let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
+            let description = NSPersistentStoreDescription()
+            description.url = documentURL.appendingPathComponent("MusicPlayer.sqlite")
+            description.type = NSSQLiteStoreType
+            descriptions.append(description)
+        }
+        if descriptions.count > 0 {
+            return descriptions
+        }
+        Console.logError("Construct storeDescriptions failed!")
         return nil
     }()
 }
