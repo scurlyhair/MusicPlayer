@@ -35,6 +35,10 @@
 		E18D769E24AC4269005A87EA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769C24AC4269005A87EA /* APIService.swift */; };
 		E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D76A324AC43EA005A87EA /* NetwokingError.swift */; };
 		E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D76A324AC43EA005A87EA /* NetwokingError.swift */; };
+		E198E0E024B2BDA6009EE2CB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198E0DF24B2BDA6009EE2CB /* CoreDataStack.swift */; };
+		E198E0E124B2BDA6009EE2CB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198E0DF24B2BDA6009EE2CB /* CoreDataStack.swift */; };
+		E19F32C924B59445009B012D /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F32C824B59445009B012D /* Console.swift */; };
+		E19F32CA24B59445009B012D /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F32C824B59445009B012D /* Console.swift */; };
 		E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEBF24AD88A000CA2EEF /* HomeViewModel.swift */; };
 		E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBEC124AD88BB00CA2EEF /* HomeView.swift */; };
 		E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */; };
@@ -53,6 +57,8 @@
 		E1D222FF24AC8F22004DB041 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222FD24AC8F22004DB041 /* Account.swift */; };
 		E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
 		E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
+		E1DCD81424B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */; };
+		E1DCD81524B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,8 @@
 		E18D769924AB2271005A87EA /* NetwokingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingService.swift; sourceTree = "<group>"; };
 		E18D769C24AC4269005A87EA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E18D76A324AC43EA005A87EA /* NetwokingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingError.swift; sourceTree = "<group>"; };
+		E198E0DF24B2BDA6009EE2CB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E19F32C824B59445009B012D /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		E1BBBEBF24AD88A000CA2EEF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E1BBBEC124AD88BB00CA2EEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E1BBBECE24ADD22D00CA2EEF /* NetwokingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingHelper.swift; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 		E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteAccessor.swift; sourceTree = "<group>"; };
 		E1D222FD24AC8F22004DB041 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E1D2230024AC8FAD004DB041 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +244,8 @@
 		E18D768E24A9E9C9005A87EA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E19F32C724B593F4009B012D /* Utilities */,
+				E198E0DE24B2BD86009EE2CB /* Persistence */,
 				E1BBBED224ADD50000CA2EEF /* Components */,
 				E1BBBECD24ADD21A00CA2EEF /* Helpers */,
 				E1D222FC24AC8F0E004DB041 /* Model */,
@@ -271,6 +282,23 @@
 				E18D769C24AC4269005A87EA /* APIService.swift */,
 			);
 			path = Netwoking;
+			sourceTree = "<group>";
+		};
+		E198E0DE24B2BD86009EE2CB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				E198E0DF24B2BDA6009EE2CB /* CoreDataStack.swift */,
+				E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		E19F32C724B593F4009B012D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E19F32C824B59445009B012D /* Console.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		E1BBBEBE24AD885400CA2EEF /* Home */ = {
@@ -453,7 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
+				E1DCD81424B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */,
+				E19F32C924B59445009B012D /* Console.swift in Sources */,
 				E18D769D24AC4269005A87EA /* APIService.swift in Sources */,
 				5933CAA524AED93F006B1B8C /* SongListViewModel.swift in Sources */,
 				E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */,
@@ -471,6 +501,7 @@
 				E1D222FE24AC8F22004DB041 /* Account.swift in Sources */,
 				E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				5933CAA724AEDD39006B1B8C /* Song.swift in Sources */,
+				E198E0E024B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
 				5934E13524A8E70000C95D2C /* AppDelegate.swift in Sources */,
 				E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */,
 				5934E13724A8E70000C95D2C /* SceneDelegate.swift in Sources */,
@@ -491,13 +522,16 @@
 				E1BBBED524ADD51D00CA2EEF /* ImageView.swift in Sources */,
 				E18D769E24AC4269005A87EA /* APIService.swift in Sources */,
 				E1BBBED824ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
+				E198E0E124B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
 				E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
 				E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */,
 				5933CAA824AEDD39006B1B8C /* Song.swift in Sources */,
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
+				E19F32CA24B59445009B012D /* Console.swift in Sources */,
 				E1D222FF24AC8F22004DB041 /* Account.swift in Sources */,
 				E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
+				E1DCD81524B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,6 +793,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */,
+			);
+			currentVersion = E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */;
+			path = MusicPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5934E12924A8E70000C95D2C /* Project object */;
 }
