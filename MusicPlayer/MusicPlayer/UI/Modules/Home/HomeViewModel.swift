@@ -24,5 +24,17 @@ extension HomeView {
         func accountBtnTapped() {
             isPresentLogin = true
         }
+        
+        func dataGeneration() {
+            
+            let stack = CoreDataStack()
+            stack.mainContext?.perform {
+                
+            }
+            
+        }
+        func dataMigration() {
+            
+        }
     }
 }

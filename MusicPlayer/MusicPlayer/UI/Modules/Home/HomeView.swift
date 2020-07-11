@@ -13,13 +13,21 @@ struct HomeView: View {
     @EnvironmentObject var status: PresentationStatus
 
     var body: some View {
-        SongListView(viewModel: .init())
-            .onAppear(perform: {
-                self.viewModel.bind(isPresentLogin: self.$status.isPresentLogin)
+        VStack {
+            SongListView(viewModel: .init())
+            Button(action: viewModel.dataGeneration, label: {
+                Text("生成数据").padding()
             })
-            .navigationBarItems(trailing: configureNavigationBarItemTrailing())
-            .navigationBarTitle("Home", displayMode: .large)
-            .padding()
+            Button(action: viewModel.dataMigration, label: {
+                Text("版本迁移").padding()
+            })
+        }
+        .onAppear(perform: {
+            self.viewModel.bind(isPresentLogin: self.$status.isPresentLogin)
+            })
+        .navigationBarItems(trailing: configureNavigationBarItemTrailing())
+        .navigationBarTitle("Home", displayMode: .large)
+        .padding()
     }
 
     func configureNavigationBarItemTrailing() -> some View {

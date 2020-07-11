@@ -66,22 +66,3 @@ class CoreDataStack {
         return nil
     }()
 }
-
-// MARK: - print document directory
-extension CoreDataStack {
-    func printContentsOfDocumentDirectory() {
-        guard
-            let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
-        else {
-            print("Can't find document directory!")
-            return
-        }
-        print(documentURL.absoluteString)
-        do {
-            let contents = try FileManager.default.contentsOfDirectory(atPath: documentURL.path)
-            print(contents)
-        } catch {
-            print("Error getting components of document directory \(error)")
-        }
-    }
-}

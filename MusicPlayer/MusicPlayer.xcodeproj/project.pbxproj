@@ -25,8 +25,14 @@
 		5934E15324A8E73200C95D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15224A8E73200C95D2C /* Assets.xcassets */; };
 		5934E15624A8E73200C95D2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15524A8E73200C95D2C /* Preview Assets.xcassets */; };
 		5934E15924A8E73200C95D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5934E15724A8E73200C95D2C /* Main.storyboard */; };
+		59356DE424B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59356DE224B73A49001BB924 /* MusicPlayer.xcdatamodeld */; };
+		59356DE524B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59356DE224B73A49001BB924 /* MusicPlayer.xcdatamodeld */; };
 		598AC55D24ACCDF100615376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55C24ACCDF100615376 /* LoginView.swift */; };
 		598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
+		59E5DA1A24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */; };
+		59E5DA1B24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */; };
+		59E5DA1C24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */; };
+		59E5DA1D24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */; };
 		59F1533324AEC55A0008492E /* Acccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1533224AEC55A0008492E /* Acccessor.swift */; };
 		59F1533424AEC55A0008492E /* Acccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1533224AEC55A0008492E /* Acccessor.swift */; };
 		E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
@@ -55,8 +61,6 @@
 		E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
 		E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
 		E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
-		E1DCD81424B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */; };
-		E1DCD81524B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,8 +86,11 @@
 		5934E15824A8E73200C95D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5934E15A24A8E73200C95D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5934E15B24A8E73200C95D2C /* MusicPlayerForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicPlayerForMac.entitlements; sourceTree = "<group>"; };
+		59356DE324B73A49001BB924 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 		598AC55C24ACCDF100615376 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		598AC55F24ACCF2000615376 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		59F1533224AEC55A0008492E /* Acccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acccessor.swift; sourceTree = "<group>"; };
 		E18D769924AB2271005A87EA /* NetwokingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingService.swift; sourceTree = "<group>"; };
 		E18D769C24AC4269005A87EA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -99,7 +106,6 @@
 		E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkingService.swift; sourceTree = "<group>"; };
 		E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteAccessor.swift; sourceTree = "<group>"; };
 		E1D2230024AC8FAD004DB041 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
-		E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,8 +290,8 @@
 		E198E0DE24B2BD86009EE2CB /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				59356DE224B73A49001BB924 /* MusicPlayer.xcdatamodeld */,
 				E198E0DF24B2BDA6009EE2CB /* CoreDataStack.swift */,
-				E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -360,6 +366,8 @@
 		E1D222FC24AC8F0E004DB041 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */,
+				59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */,
 				5933CAA624AEDD39006B1B8C /* Song.swift */,
 			);
 			path = Model;
@@ -477,11 +485,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
-				E1DCD81424B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */,
+				59356DE424B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				E19F32C924B59445009B012D /* Console.swift in Sources */,
 				E18D769D24AC4269005A87EA /* APIService.swift in Sources */,
 				5933CAA524AED93F006B1B8C /* SongListViewModel.swift in Sources */,
+				59E5DA1A24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */,
 				E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */,
 				5933CAAE24AEF877006B1B8C /* SongListCellViewModel.swift in Sources */,
 				E1BBBEE424ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
@@ -497,6 +506,7 @@
 				E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				5933CAA724AEDD39006B1B8C /* Song.swift in Sources */,
 				E198E0E024B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
+				59E5DA1C24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */,
 				5934E13524A8E70000C95D2C /* AppDelegate.swift in Sources */,
 				E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */,
 				5934E13724A8E70000C95D2C /* SceneDelegate.swift in Sources */,
@@ -512,6 +522,7 @@
 			files = (
 				E1BBBED024ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
 				5934E15124A8E73200C95D2C /* ContentView.swift in Sources */,
+				59356DE524B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D769B24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				59F1533424AEC55A0008492E /* Acccessor.swift in Sources */,
 				E1BBBED524ADD51D00CA2EEF /* ImageView.swift in Sources */,
@@ -520,12 +531,13 @@
 				E198E0E124B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
 				E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
 				E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */,
+				59E5DA1D24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */,
 				5933CAA824AEDD39006B1B8C /* Song.swift in Sources */,
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E19F32CA24B59445009B012D /* Console.swift in Sources */,
+				59E5DA1B24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */,
 				E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
-				E1DCD81524B43FBB007379E2 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,12 +801,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E1DCD81224B43FBB007379E2 /* MusicPlayer.xcdatamodeld */ = {
+		59356DE224B73A49001BB924 /* MusicPlayer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */,
+				59356DE324B73A49001BB924 /* MusicPlayer.xcdatamodel */,
 			);
-			currentVersion = E1DCD81324B43FBB007379E2 /* MusicPlayer.xcdatamodel */;
+			currentVersion = 59356DE324B73A49001BB924 /* MusicPlayer.xcdatamodel */;
 			path = MusicPlayer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
