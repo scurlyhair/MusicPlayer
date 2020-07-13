@@ -57,6 +57,8 @@ class CoreDataStack {
             let description = NSPersistentStoreDescription()
             description.url = documentURL.appendingPathComponent("MusicPlayer.sqlite")
             description.type = NSSQLiteStoreType
+            description.shouldMigrateStoreAutomatically = true
+            description.shouldInferMappingModelAutomatically = true
             descriptions.append(description)
         }
         if descriptions.count > 0 {

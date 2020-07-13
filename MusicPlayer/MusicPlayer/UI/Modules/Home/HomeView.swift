@@ -13,15 +13,7 @@ struct HomeView: View {
     @EnvironmentObject var status: PresentationStatus
 
     var body: some View {
-        VStack {
-            SongListView(viewModel: .init())
-            Button(action: viewModel.dataGeneration, label: {
-                Text("生成数据").padding()
-            })
-            Button(action: viewModel.dataMigration, label: {
-                Text("版本迁移").padding()
-            })
-        }
+        SongListView(viewModel: .init())
         .onAppear(perform: {
             self.viewModel.bind(isPresentLogin: self.$status.isPresentLogin)
             })
