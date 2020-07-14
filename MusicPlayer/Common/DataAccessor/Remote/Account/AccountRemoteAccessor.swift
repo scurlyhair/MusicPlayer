@@ -10,19 +10,14 @@ import Foundation
 import Combine
 
 protocol AccountRemoteAccessor: NetworkingService {
-    func signIn(username: String, password: String) -> AnyPublisher<DecodableAccount, Error>
+    func signIn(username: String, password: String) -> AnyPublisher<Account.DecodableModel, Error>
 }
 
 struct RealAccountRemoteAccessor: AccountRemoteAccessor {
     var session: URLSession
     let bgQueue = DispatchQueue(label: "bg_parse_queue")
     
-    func signIn(username: String, password: String) -> AnyPublisher<DecodableAccount, Error> {
+    func signIn(username: String, password: String) -> AnyPublisher<Account.DecodableModel, Error> {
         return call(endpoint: AccountAPI.signIn(username: username, password: password))
     }
-}
-
-// MARK: - issue: Decodable vs Core Data
-struct DecodableAccount: Decodable {
-    
 }

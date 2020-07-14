@@ -9,16 +9,14 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(\.presentationMode) var presentationMode
     @ObservedObject private(set) var viewModel: ViewModel
+    @EnvironmentObject var status: PresentationStatus
 
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Button(action: {
-                    self.presentationMode.wrappedValue.dismiss()
-                }, label: {
+                Button(action: viewModel.cancelBtnTapped, label: {
                     Text("Cancel")
                 })
             }
@@ -28,11 +26,12 @@ struct LoginView: View {
                 .font(.headline)
             input(title: "username", text: $viewModel.username)
             input(title: "password", text: $viewModel.password)
-            Button(action: viewModel.commit, label: {
+            Button(action: viewModel.commitBtnTapped, label: {
                 Text("Commit")
             })
             Spacer()
-        }.padding()
+        }
+        .padding()
     }
 
     func input(title: String, text: Binding<String>) -> some View {

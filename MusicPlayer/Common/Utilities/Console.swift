@@ -15,4 +15,10 @@ struct Console {
         print("❌ Error: \(message)\n at \(function) in \(fileName):\(line)")
         #endif
     }
+    static func logSuccess(_ message: String, file: String = #file, function: String = #function, line: Int = #line) {
+        #if DEBUG
+        let fileName = file.components(separatedBy: "/").last ?? "unknown file"
+        print("✅ Success: \(message)\n at \(function) in \(fileName):\(line)")
+        #endif
+    }
 }

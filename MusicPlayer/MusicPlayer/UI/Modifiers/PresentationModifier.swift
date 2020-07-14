@@ -15,7 +15,7 @@ struct PresentationModifier: ViewModifier {
     func body(content: Content) -> some View {
         return content
             .sheet(isPresented: $status.isPresentLogin, content: {
-            LoginView(viewModel: .init())
+                LoginView(viewModel: .init(isPresentLogin: self.$status.isPresentLogin))
         })
     }
 }

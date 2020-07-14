@@ -11,9 +11,9 @@ import CoreData
 
 class CoreDataStack {
     /// Background queue
-    lazy var backgroundQueue: DispatchQueue = DispatchQueue(label: "core_data")
+    lazy var bgQueue: DispatchQueue = DispatchQueue(label: "core_data")
     
-    /// Main queue context
+    /// Main context
     lazy var mainContext: NSManagedObjectContext? = {
         if let coordinator = storeCoordinator {
             let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
@@ -23,6 +23,17 @@ class CoreDataStack {
         Console.logError("Construct mainContext failed!")
         return nil
     }()
+    
+    /// Private Context
+    func privateContext() -> NSManagedObjectContext? {
+        if let coordinator = storeCoordinator {
+            let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+            context.persistentStoreCoordinator = coordinator
+            return context
+        }
+        Console.logError("Construct privateContext failed!")
+        return nil
+    }
     
     /// Store Coordinator
     private lazy var storeCoordinator: NSPersistentStoreCoordinator? = {

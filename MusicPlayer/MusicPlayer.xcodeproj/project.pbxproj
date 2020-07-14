@@ -29,10 +29,6 @@
 		59356DE524B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59356DE224B73A49001BB924 /* MusicPlayer.xcdatamodeld */; };
 		598AC55D24ACCDF100615376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55C24ACCDF100615376 /* LoginView.swift */; };
 		598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AC55F24ACCF2000615376 /* LoginViewModel.swift */; };
-		59E5DA1A24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */; };
-		59E5DA1B24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */; };
-		59E5DA1C24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */; };
-		59E5DA1D24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */; };
 		59F1533324AEC55A0008492E /* Acccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1533224AEC55A0008492E /* Acccessor.swift */; };
 		59F1533424AEC55A0008492E /* Acccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1533224AEC55A0008492E /* Acccessor.swift */; };
 		E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D769924AB2271005A87EA /* NetwokingService.swift */; };
@@ -61,6 +57,18 @@
 		E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */; };
 		E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
 		E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2230024AC8FAD004DB041 /* AccountAPI.swift */; };
+		E1F7954024BD4F7C00169579 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7953F24BD4F7C00169579 /* Crypto.swift */; };
+		E1F7954124BD4F7C00169579 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7953F24BD4F7C00169579 /* Crypto.swift */; };
+		E1F7954A24BD5D9500169579 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954824BD5D9500169579 /* Account+CoreDataClass.swift */; };
+		E1F7954B24BD5D9500169579 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954824BD5D9500169579 /* Account+CoreDataClass.swift */; };
+		E1F7954C24BD5D9500169579 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954924BD5D9500169579 /* Account+CoreDataProperties.swift */; };
+		E1F7954D24BD5D9500169579 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954924BD5D9500169579 /* Account+CoreDataProperties.swift */; };
+		E1F7955024BD818C00169579 /* AccountLocalAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954F24BD818C00169579 /* AccountLocalAccessor.swift */; };
+		E1F7955124BD818C00169579 /* AccountLocalAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7954F24BD818C00169579 /* AccountLocalAccessor.swift */; };
+		E1F7955424BD896800169579 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7955324BD896800169579 /* DBService.swift */; };
+		E1F7955524BD896800169579 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7955324BD896800169579 /* DBService.swift */; };
+		E1F7955724BD9DAA00169579 /* DBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7955624BD9DAA00169579 /* DBError.swift */; };
+		E1F7955824BD9DAA00169579 /* DBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7955624BD9DAA00169579 /* DBError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,8 +97,6 @@
 		59356DE324B73A49001BB924 /* MusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 		598AC55C24ACCDF100615376 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		598AC55F24ACCF2000615376 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		59F1533224AEC55A0008492E /* Acccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acccessor.swift; sourceTree = "<group>"; };
 		E18D769924AB2271005A87EA /* NetwokingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokingService.swift; sourceTree = "<group>"; };
 		E18D769C24AC4269005A87EA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -106,6 +112,12 @@
 		E1BBBEE924ADEC1C00CA2EEF /* ImageNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetworkingService.swift; sourceTree = "<group>"; };
 		E1D222F924AC8EA7004DB041 /* AccountRemoteAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRemoteAccessor.swift; sourceTree = "<group>"; };
 		E1D2230024AC8FAD004DB041 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		E1F7953F24BD4F7C00169579 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		E1F7954824BD5D9500169579 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E1F7954924BD5D9500169579 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E1F7954F24BD818C00169579 /* AccountLocalAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLocalAccessor.swift; sourceTree = "<group>"; };
+		E1F7955324BD896800169579 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		E1F7955624BD9DAA00169579 /* DBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +283,7 @@
 		E18D769424A9EEC8005A87EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E1F7955224BD895C00169579 /* DB */,
 				E18D769F24AC4288005A87EA /* Netwoking */,
 			);
 			path = Services;
@@ -300,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				E19F32C824B59445009B012D /* Console.swift */,
+				E1F7953F24BD4F7C00169579 /* Crypto.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -359,6 +373,7 @@
 		E1D222F324AC8337004DB041 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				E1F7954E24BD817A00169579 /* Account */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -366,8 +381,8 @@
 		E1D222FC24AC8F0E004DB041 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				59E5DA1824B72F2B00229F04 /* User+CoreDataClass.swift */,
-				59E5DA1924B72F2B00229F04 /* User+CoreDataProperties.swift */,
+				E1F7954824BD5D9500169579 /* Account+CoreDataClass.swift */,
+				E1F7954924BD5D9500169579 /* Account+CoreDataProperties.swift */,
 				5933CAA624AEDD39006B1B8C /* Song.swift */,
 			);
 			path = Model;
@@ -380,6 +395,23 @@
 				59F1533124ACF66E0008492E /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		E1F7954E24BD817A00169579 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7954F24BD818C00169579 /* AccountLocalAccessor.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		E1F7955224BD895C00169579 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7955324BD896800169579 /* DBService.swift */,
+				E1F7955624BD9DAA00169579 /* DBError.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,17 +517,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BBBECF24ADD22D00CA2EEF /* NetwokingHelper.swift in Sources */,
+				E1F7955424BD896800169579 /* DBService.swift in Sources */,
+				E1F7954A24BD5D9500169579 /* Account+CoreDataClass.swift in Sources */,
 				59356DE424B73A49001BB924 /* MusicPlayer.xcdatamodeld in Sources */,
 				E18D769A24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				E19F32C924B59445009B012D /* Console.swift in Sources */,
 				E18D769D24AC4269005A87EA /* APIService.swift in Sources */,
 				5933CAA524AED93F006B1B8C /* SongListViewModel.swift in Sources */,
-				59E5DA1A24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */,
+				E1F7954C24BD5D9500169579 /* Account+CoreDataProperties.swift in Sources */,
 				E1BBBEC224AD88BB00CA2EEF /* HomeView.swift in Sources */,
 				5933CAAE24AEF877006B1B8C /* SongListCellViewModel.swift in Sources */,
 				E1BBBEE424ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
 				598AC56024ACCF2000615376 /* LoginViewModel.swift in Sources */,
 				E1BBBEEA24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
+				E1F7954024BD4F7C00169579 /* Crypto.swift in Sources */,
 				59F1533324AEC55A0008492E /* Acccessor.swift in Sources */,
 				E1D222FA24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E1D2230124AC8FAD004DB041 /* AccountAPI.swift in Sources */,
@@ -505,8 +540,9 @@
 				E18D76A424AC43EA005A87EA /* NetwokingError.swift in Sources */,
 				E1BBBED724ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				5933CAA724AEDD39006B1B8C /* Song.swift in Sources */,
+				E1F7955724BD9DAA00169579 /* DBError.swift in Sources */,
+				E1F7955024BD818C00169579 /* AccountLocalAccessor.swift in Sources */,
 				E198E0E024B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
-				59E5DA1C24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */,
 				5934E13524A8E70000C95D2C /* AppDelegate.swift in Sources */,
 				E1BBBEC024AD88A000CA2EEF /* HomeViewModel.swift in Sources */,
 				5934E13724A8E70000C95D2C /* SceneDelegate.swift in Sources */,
@@ -526,18 +562,22 @@
 				E18D769B24AB2271005A87EA /* NetwokingService.swift in Sources */,
 				59F1533424AEC55A0008492E /* Acccessor.swift in Sources */,
 				E1BBBED524ADD51D00CA2EEF /* ImageView.swift in Sources */,
+				E1F7954D24BD5D9500169579 /* Account+CoreDataProperties.swift in Sources */,
+				E1F7955524BD896800169579 /* DBService.swift in Sources */,
 				E18D769E24AC4269005A87EA /* APIService.swift in Sources */,
 				E1BBBED824ADD53700CA2EEF /* ImageViewModel.swift in Sources */,
 				E198E0E124B2BDA6009EE2CB /* CoreDataStack.swift in Sources */,
 				E1BBBEEB24ADEC1C00CA2EEF /* ImageNetworkingService.swift in Sources */,
 				E1D2230224AC8FAD004DB041 /* AccountAPI.swift in Sources */,
-				59E5DA1D24B72F2B00229F04 /* User+CoreDataProperties.swift in Sources */,
+				E1F7954B24BD5D9500169579 /* Account+CoreDataClass.swift in Sources */,
+				E1F7955124BD818C00169579 /* AccountLocalAccessor.swift in Sources */,
+				E1F7954124BD4F7C00169579 /* Crypto.swift in Sources */,
 				5933CAA824AEDD39006B1B8C /* Song.swift in Sources */,
 				5934E14F24A8E73200C95D2C /* AppDelegate.swift in Sources */,
 				E1D222FB24AC8EA7004DB041 /* AccountRemoteAccessor.swift in Sources */,
 				E19F32CA24B59445009B012D /* Console.swift in Sources */,
-				59E5DA1B24B72F2B00229F04 /* User+CoreDataClass.swift in Sources */,
 				E1BBBEE524ADE05200CA2EEF /* ImageRemoteAccessor.swift in Sources */,
+				E1F7955824BD9DAA00169579 /* DBError.swift in Sources */,
 				E18D76A524AC43EA005A87EA /* NetwokingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ extension HTTPCodes {
     static let success = 200 ..< 300
 }
 
-enum NetworkingError: Swift.Error {
+enum NetworkingError: Error {
     case invalidURL
     case httpCode(HTTPCode)
     case unexpectedResponse

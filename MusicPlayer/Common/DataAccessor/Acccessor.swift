@@ -33,7 +33,9 @@ struct Accessor {
     
     // db
     private static func configDataBase() -> DataBaseAccessor {
-        return DataBaseAccessor()
+        let coreDataStack = CoreDataStack()
+        let account = RealAccountLocalAccessor(coreDataStack: coreDataStack)
+        return DataBaseAccessor(account: account)
     }
 }
 
@@ -50,7 +52,7 @@ extension Accessor {
 
 extension Accessor {
     struct DataBaseAccessor {
-        
+        let account: AccountLocalAccessor
     }
 }
 
