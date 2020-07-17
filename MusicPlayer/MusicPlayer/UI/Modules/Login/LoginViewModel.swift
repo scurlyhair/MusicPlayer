@@ -50,57 +50,65 @@ extension LoginView {
                     self?.signUp(token: token)
                 }
             }
-            publisher.subscribe(subscriber)
+            publisher
+                .subscribe(on: DispatchQueue.global())
+                .receive(on: DispatchQueue.main)
+                .subscribe(subscriber)
         }
         
         func cancelBtnTapped() {
             isPresentLogin = false
         }
-        
-        private func signUp(token: String) {
-            let publisher = Accessor.db.account.insertAccount(username: username, token: token)
-            let subscriber = Subscribers.Sink<Account, Error>(receiveCompletion: { completion in
-                if let error = completion.error {
-                    Console.logError(error.localizedDescription)
-                }
-            }) { [weak self] _ in
-                Console.logSuccess("Login success!")
-                DispatchQueue.main.async {
-                    self?.isPresentLogin = false
-                }
+    }
+}
+
+// MARK: - Private helper methods
+
+extension LoginView.ViewModel {
+    private func signUp(token: String) {
+        let publisher = Accessor.db.account.insertAccount(username: username, token: token)
+        let subscriber = Subscribers.Sink<Account, Error>(receiveCompletion: { completion in
+            if let error = completion.error {
+                Console.logError(error.localizedDescription)
             }
-            publisher.subscribe(subscriber)
+        }) { [weak self] _ in
+            Console.logSuccess("Login success!")
+            self?.isPresentLogin = false
         }
-        
-        private func signIn() {
-            Console.logSuccess("Login Success!")
-            DispatchQueue.main.async {
-                self.isPresentLogin = false
-            }
+        publisher
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
+            .subscribe(subscriber)
+    }
+    
+    private func signIn() {
+        Console.logSuccess("Login Success!")
+        DispatchQueue.main.async {
+            self.isPresentLogin = false
         }
-        
-        private func updatePassword(token: String) {
-            let publisher = Accessor.db.account.updateAccount(username: username, token: token)
-            let subscriber = Subscribers.Sink<Account, Error>(receiveCompletion: { completion in
-                if let error = completion.error {
-                    Console.logError(error.localizedDescription)
-                }
-            }) { _ in
-                Console.logSuccess("Password changed!")
+    }
+    
+    private func updatePassword(token: String) {
+        let publisher = Accessor.db.account.updateAccount(username: username, token: token)
+        let subscriber = Subscribers.Sink<Account, Error>(receiveCompletion: { completion in
+            if let error = completion.error {
+                Console.logError(error.localizedDescription)
             }
-            publisher.subscribe(subscriber)
+        }) { _ in
+            Console.logSuccess("Password changed!")
         }
-        
-        private func inputValidated() -> Bool {
-            guard username.count > 3 else {
-                Console.logError("username should be at least 4 characters!")
-                return false
-            }
-            guard password.count > 3 else {
-                Console.logError("password should be at least 4 characters!")
-                return false
-            }
-            return true
+        publisher.subscribe(subscriber)
+    }
+    
+    private func inputValidated() -> Bool {
+        guard username.count > 3 else {
+            Console.logError("username should be at least 4 characters!")
+            return false
         }
+        guard password.count > 3 else {
+            Console.logError("password should be at least 4 characters!")
+            return false
+        }
+        return true
     }
 }
